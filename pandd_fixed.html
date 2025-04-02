@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paff-Daddy | P&D Company</title>
+    <!-- Standard favicon -->
+    <link rel="icon" href="/image/1.png" type="image/x-icon">
+    <!-- For modern browsers -->
+    <link rel="icon" href="/image/2.png" type="image/png">
+    <meta name="theme-color" content="#6c5ce7">
+    <link rel="stylesheet" href="pandd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <div class="logo-inner">
+                    <div class="logo-letter p">P</div>
+                    <div class="logo-letter amp">&</div>
+                    <div class="logo-letter d">D</div>
+                </div>
+            </div>
+            <div class="logo-text">P&D Company</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Paff-Daddy</span><br>Full Stack Developer</h1>
+            <p>Creating beautiful, functional, and user-friendly web experiences with cutting-edge technologies. Part of the innovative team at P&D Company.</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3>Frontend Development</h3>
+                <p>HTML5, CSS3, JavaScript, React, Vue.js, Responsive Design</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🔧</div>
+                <h3>Backend Development</h3>
+                <p>Node.js, Express, Python, Django, REST APIs, GraphQL</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📱</div>
+                <h3>Mobile Development</h3>
+                <p>React Native, Flutter, Progressive Web Apps</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p>Figma, Adobe XD, User Research, Prototyping</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>E-Commerce Platform</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">MongoDB</span>
+                    </div>
+                    <p>A full-featured e-commerce solution with payment integration and admin dashboard.</p>
+                    <a href="#" class="cta-button">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>Task Management App</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">Vue.js</span>
+                        <span class="project-tag">Firebase</span>
+                    </div>
+                    <p>Collaborative task management application with real-time updates.</p>
+                    <a href="#" class="cta-button">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>AI Content Generator</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">TensorFlow</span>
+                        <span class="project-tag">Flask</span>
+                    </div>
+                    <p>Machine learning powered content generation tool for marketers.</p>
+                    <a href="#" class="cta-button">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-logo">P<span>&</span>D Company</div>
+        <div class="footer-links">
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="mailto:paffdaddy06@gmail.com">Contact</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="social-links">
+            <a href="https://wa.me/250793063512" class="social-link whatsapp-link">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://instagram.com/pa.ff_da.ddy" class="social-link instagram-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <p class="copyright">© 2023 Paff-Daddy @ P&D Company. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Logo Animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const logo = document.querySelector('.logo');
+            
+            // Animate logo letters on load
+            setTimeout(() => {
+                document.querySelector('.logo-letter.p').style.transform = 'translateY(0)';
+                document.querySelector('.logo-letter.amp').style.opacity = '1';
+                document.querySelector('.logo-letter.amp').style.transform = 'scale(1)';
+                document.querySelector('.logo-letter.d').style.transform = 'translateY(0)';
+            }, 500);
+            
+            // Add hover effect
+            logo.addEventListener('mouseenter', () => {
+                document.querySelector('.logo-letter.p').style.transform = 'translateY(0) rotate(-15deg)';
+                document.querySelector('.logo-letter.amp').style.transform = 'scale(1.2)';
+                document.querySelector('.logo-letter.d').style.transform = 'translateY(0) rotate(15deg)';
+            });
+            
+            logo.addEventListener('mouseleave', () => {
+                document.querySelector('.logo-letter.p').style.transform = 'translateY(0)';
+                document.querySelector('.logo-letter.amp').style.transform = 'scale(1)';
+                document.querySelector('.logo-letter.d').style.transform = 'translateY(0)';
+            });
+            
+            // Smooth scrolling for navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Animate skill cards on scroll
+            const skillCards = document.querySelectorAll('.skill-card');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            skillCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+            
+            // Animate project cards with staggered delay
+            const projectCards = document.querySelectorAll('.project-card');
+            projectCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
+                
+                const cardObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }
+                    });
+                }, { threshold: 0.1 });
+                
+                cardObserver.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
